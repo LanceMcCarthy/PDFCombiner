@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfCombiner.Wpf", "PdfCombiner.Wpf\PdfCombiner.Wpf.csproj", "{BB6AB37F-84D1-444A-8F2D-4D508D56EA1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB6AB37F-84D1-444A-8F2D-4D508D56EA1F}.Debug|x86.ActiveCfg = Debug|x86
+		{BB6AB37F-84D1-444A-8F2D-4D508D56EA1F}.Debug|x86.Build.0 = Debug|x86
+		{BB6AB37F-84D1-444A-8F2D-4D508D56EA1F}.Release|x86.ActiveCfg = Release|x86
+		{BB6AB37F-84D1-444A-8F2D-4D508D56EA1F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CBAE988-BCAA-44E0-9560-595A08FC52BF}
+	EndGlobalSection
+EndGlobal
