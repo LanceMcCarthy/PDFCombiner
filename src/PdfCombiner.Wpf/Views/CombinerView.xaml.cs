@@ -1,5 +1,4 @@
 ﻿using System.Windows.Controls;
-using PdfCombiner.Wpf.ViewModels;
 
 namespace PdfCombiner.Wpf.Views
 {
@@ -8,7 +7,6 @@ namespace PdfCombiner.Wpf.Views
         public CombinerView()
         {
             InitializeComponent();
-            this.DataContext = new CombinerViewModel(this);
         }
     }
 }
