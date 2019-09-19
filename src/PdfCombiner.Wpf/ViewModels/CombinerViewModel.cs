@@ -2,7 +2,6 @@
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Windows;
-using System.Windows.Controls;
 using PdfCombiner.Wpf.Models;
 using Telerik.Windows.Controls;
 using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Streaming;
@@ -13,15 +12,15 @@ namespace PdfCombiner.Wpf.ViewModels
     {
         private readonly RadOpenFileDialog openFileDialog;
         private readonly RadSaveFileDialog saveFileDialog;
-        private bool _isSaveButtonEnabled;
+        private bool isSaveButtonEnabled;
 
-        public CombinerViewModel(ContentControl viewHandle)
+        public CombinerViewModel()
         {
-            openFileDialog = new RadOpenFileDialog { Owner = viewHandle, ExpandToCurrentDirectory = false };
+            openFileDialog = new RadOpenFileDialog { Owner = Application.Current.MainWindow, ExpandToCurrentDirectory = false };
             openFileDialog.Filter = "PDF Documents|*.pdf";
             openFileDialog.Multiselect = true;
 
-            saveFileDialog = new RadSaveFileDialog { Owner = viewHandle, ExpandToCurrentDirectory = false };
+            saveFileDialog = new RadSaveFileDialog { Owner = Application.Current.MainWindow, ExpandToCurrentDirectory = false };
             saveFileDialog.Filter = "PDF Documents|*.pdf";
 
             AddItemCommand = new DelegateCommand(AddItem);
@@ -40,8 +39,8 @@ namespace PdfCombiner.Wpf.ViewModels
 
         public bool IsSaveButtonEnabled
         {
-            get => _isSaveButtonEnabled;
-            set => SetProperty(ref _isSaveButtonEnabled, value);
+            get => isSaveButtonEnabled;
+            set => SetProperty(ref isSaveButtonEnabled, value);
         }
 
         public DelegateCommand AddItemCommand { get; set; }
